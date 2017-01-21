@@ -1,0 +1,23 @@
+public static void insertSort(int[] numbers) {
+  for ( int i = 1; i < numbers.length; i++) {
+    int temp = numbers[i];
+    for (int j = i - 1; j >= 0; j--) {
+      if (numbers[j] > temp) {
+        numbers[j+1] = numbers[j];
+      } else {
+        break;
+      }
+      numbers[j+1] = temp;
+    }
+    /*
+    int j = i;
+    while (j >= 0 && numbers[i] < numbers[j]) {
+      j--;
+    } 
+    int temp = numbers[i];
+    for (int k = j; k < i; k++) {
+      numbers[k+1] = numbers[k];
+    }
+    numbers[j] = temp;
+    */
+  }
